@@ -9,11 +9,11 @@ using namespace std;
 class Solution {
 private:
 	vector<vector<int>> result;
-	void swap(int i, int j, vector<int>& nums)
+	void swap(int &i, int &j)
 	{
-		int tmp = nums[i];
-		nums[i] = nums[j];
-		nums[j] = tmp;
+		int tmp = i;
+		i = j;
+		j = tmp;
 		return;
 	}
 
@@ -29,9 +29,9 @@ private:
 		{
 			for (int i = startPos; i < len;i++)
 			{
-				swap(startPos, i, nums);
+				swap(nums[startPos],nums[i]);
 				Dfs(startPos+1, nums);
-				swap(startPos, i,nums);
+				swap(nums[startPos], nums[i]);
 			}
 		}	
 	}
