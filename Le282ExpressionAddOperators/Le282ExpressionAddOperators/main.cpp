@@ -5,64 +5,6 @@
 
 using namespace std;
 
-class Solution {
-
-public:
-	vector<string> addOperators(string num, int target) {
-	
-		m_target = target;	
-
-		for (int i = 0; i < num.length();i++)
-		{
-			m_vNums.push_back((num[i] - '0'));
-		}
-		length = m_vNums.size();
-
-		if (length==1)
-		{
-			if (m_vNums[0]==target)
-			{
-				char c = m_vNums[0] + '0';
-				string str;
-				str = c;
-				strRes.push_back(str);
-			}
-		}
-		if (length>1)
-		{
-			char c = m_vNums[0] + '0';
-			string str;
-			str= c;
-			DfsCalc(m_vNums[1], m_vNums[0], 1, str);
-		}
-		return strRes;
-	}
-private:
-	vector<string> strRes;
-	vector<int> m_vNums;
-	int m_target = 0;
-	int length = 0;
-	void DfsCalc(int curNum,int sum,int startPos,string str)
-	{
-		if (sum==m_target&&startPos==length)
-		{
-			strRes.push_back(str);
-			return;
-		}
-		else
-		{
-
-			for (int i = startPos; i < length; i++)
-			{
-				char c = m_vNums[startPos] + '0';
-				DfsCalc(m_vNums[startPos], sum + m_vNums[startPos], i + 1, str + '+' + c);
-				DfsCalc(m_vNums[startPos], sum - m_vNums[startPos], i + 1, str + '-' + c);
-				DfsCalc(m_vNums[startPos], (sum - m_vNums[startPos - 1]) + m_vNums[startPos - 1] * m_vNums[startPos], i + 1, str + '*' + c);
-			}		
-		}	
-	}
-};
-
 
 
 
