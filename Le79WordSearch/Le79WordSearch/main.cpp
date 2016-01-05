@@ -17,6 +17,8 @@ public:
 
 		targetWord = word;
 
+		directions = { { -1, 0 }, { 1, 0 }, { 0, 1 },{0,-1} };
+
 		if (word.length()>boardRow*boardCol)
 		{
 			return false;
@@ -48,6 +50,7 @@ private:
 	int boardRow;
 	int boardCol;
 	bool result = false;
+	vector<vector<int>> directions;
 
 	void DfsBackTrack(vector<vector<char>>& board, int row, int col, string word)
 	{
@@ -73,30 +76,19 @@ private:
 		word = word + board[row][col];
 		visited[row][col] = true;
 		
+
 		if (word == targetWord.substr(0, word.length()))
 		{
-			DfsBackTrack(board, row - 1, col, word);
-			if (result==true)
+			for (int k = 0; k < directions.size();k++)
 			{
-				return;
-			}
-			DfsBackTrack(board, row + 1, col, word);
-			if (result == true)
-			{
-				return;
-			}
-			DfsBackTrack(board, row, col - 1, word);
-			if (result == true)
-			{
-				return;
-			}
-			DfsBackTrack(board, row, col + 1, word);
-			if (result == true)
-			{
-				return;
+				DfsBackTrack(board, row + directions[k][0], col + directions[k][1], word);
+				if (result==true)
+				{
+					return;
+				}
 			}
 
-
+	
 		}
 		word = word.substr(0, (word.length() - 1));
 		visited[row][col] = false;
