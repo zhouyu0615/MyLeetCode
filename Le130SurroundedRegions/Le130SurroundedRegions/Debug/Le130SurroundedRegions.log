@@ -1,4 +1,4 @@
-﻿生成启动时间为 1/8/2016 11:08:16 AM。
+﻿生成启动时间为 1/8/2016 2:58:51 PM。
      1>项目“D:\我的资料库\Documents\GitHub\MyLeetCode\Le130SurroundedRegions\Le130SurroundedRegions\Le130SurroundedRegions.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\visualStudio2013\VC\bin\CL.exe /c /ID:\boost_1_55_0 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
@@ -6,6 +6,7 @@
      1>d:\我的资料库\documents\github\myleetcode\le130surroundedregions\le130surroundedregions\main.cpp(42): warning C4018: “<”: 有符号/无符号不匹配
      1>d:\我的资料库\documents\github\myleetcode\le130surroundedregions\le130surroundedregions\main.cpp(47): warning C4554: “&”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
      1>d:\我的资料库\documents\github\myleetcode\le130surroundedregions\le130surroundedregions\main.cpp(64): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\我的资料库\documents\github\myleetcode\le130surroundedregions\le130surroundedregions\main.cpp(147): warning C4018: “<”: 有符号/无符号不匹配
        Link:
          D:\Program Files (x86)\visualStudio2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\我的资料库\Documents\GitHub\MyLeetCode\Le130SurroundedRegions\Debug\Le130SurroundedRegions.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\boost_1_55_0\stage\lib opencv_ts300d.lib opencv_world300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\我的资料库\Documents\GitHub\MyLeetCode\Le130SurroundedRegions\Debug\Le130SurroundedRegions.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\我的资料库\Documents\GitHub\MyLeetCode\Le130SurroundedRegions\Debug\Le130SurroundedRegions.lib" /MACHINE:X86 Debug\main.obj
          Le130SurroundedRegions.vcxproj -> D:\我的资料库\Documents\GitHub\MyLeetCode\Le130SurroundedRegions\Debug\Le130SurroundedRegions.exe
@@ -13,4 +14,4 @@
 
 生成成功。
 
-已用时间 00:00:01.72
+已用时间 00:00:01.24

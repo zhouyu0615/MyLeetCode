@@ -75,9 +75,99 @@ public:
 };
 
 
+
+
+
+class Solution2 {
+
+private:
+	int row=0;
+	int col = 0;
+public:
+	void solve(vector<vector<char>>& board) {
+
+
+		row = board.size();
+		if (row==0)
+		{
+			return;
+		}
+		col = board[0].size();
+
+		for (int i = 0; i < row;i++) 
+		{
+			Bfs(board, i, 0);
+			Bfs(board, i, col-1);
+		}
+
+		for (int j = 0; j < col;j++)
+		{
+			Bfs(board, 0, j);
+			Bfs(board, row - 1, j);
+		}
+
+
+		for (int i = 0; i < row;i++)
+		{
+			for (int j = 0; j < col;j++)
+			{
+				if (board[i][j]=='V')
+				{
+					board[i][j] = 'O';
+				}
+				else
+				{
+					board[i][j] = 'X';
+				}
+			}
+		}
+
+	}
+
+	void Bfs(vector<vector<char>>& board,int x, int y)
+	{
+		if (board[x][y] != 'O') return;
+
+		queue<int> OFlagQueue;
+		OFlagQueue.push(x*col+y);
+
+		board[x][y] = 'V';
+
+		vector <vector<int>> directions = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
+
+		while (!OFlagQueue.empty())
+		{
+			int  Point = OFlagQueue.front();
+			OFlagQueue.pop();
+
+			int x = Point / col;
+			int y = Point%col;
+			
+			for (int k = 0; k < directions.size();k++)
+			{
+				int nextX = x + directions[k][0];
+				int nextY = y + directions[k][1];
+
+				if (nextX >= 0 && nextX < row&&nextY >= 0&&nextY<col)
+				{
+					if (board[nextX][nextY]=='O')
+					{
+						OFlagQueue.push(nextX*col + nextY);
+						board[nextX][nextY] = 'V';
+					}
+				}
+
+			}
+
+		}
+
+	}
+};
+
+
 int main()
 {
-	Solution testCase;
+	Solution2 testCase;
 
 	vector < vector<char>> board= {{'X', 'X', 'X', 'X'}, { 'X', 'O', 'O', 'X' }, { 'X', 'X', 'O', 'X' }, { 'X', 'O', 'X', 'X' }};
 
