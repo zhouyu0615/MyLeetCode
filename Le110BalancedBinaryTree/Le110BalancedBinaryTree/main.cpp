@@ -51,6 +51,53 @@ private:
 };
 
 
+
+class Solution2 {
+public:
+	bool isBalanced(TreeNode* root) {
+
+		if (CheckNode(root)==-1)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+public:
+	int CheckNode(TreeNode* TNode)
+	{
+		if (TNode==NULL)
+		{
+			return 0;
+		}
+
+		int left = CheckNode(TNode->left);
+
+		if (left==-1)
+		{
+			return -1;
+		}
+
+		int right = CheckNode(TNode->right);
+		if (right==-1)
+		{
+			return -1;
+		}
+
+
+		if (abs(left-right)>1)
+		{
+			return -1;
+		}
+		return (left > right ? left : right) + 1;
+	}
+};
+
+
+
+
 int main()
 {
 	TreeNode *root = new TreeNode(1);
@@ -58,7 +105,7 @@ int main()
 	root->left = new TreeNode(2);
 	root->left->left = new TreeNode(3);
 
-	Solution testCase;
+	Solution2 testCase;
 	cout << testCase.isBalanced(root);
 
 	
