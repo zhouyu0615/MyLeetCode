@@ -16,10 +16,10 @@ class Solution {
 public:
 	int minDepth(TreeNode* root) {
 
-	   return	GetDepth(root);
+	   return	GetMinDepth(root);
 	}
 
-	int GetDepth(TreeNode* TNode)
+	int GetMinDepth(TreeNode* TNode)
 	{
 		if (TNode == NULL)
 		{
@@ -31,15 +31,15 @@ public:
 			return 1;
 		}else if (TNode->left==NULL)
 		{
-			return GetDepth(TNode->right) + 1;
+			return GetMinDepth(TNode->right) + 1;
 		}else if (TNode->right==NULL)
 		{
-			return GetDepth(TNode->left) + 1;
+			return GetMinDepth(TNode->left) + 1;
 		}
 		else
 		{
-			int left = GetDepth(TNode->left);
-			int right = GetDepth(TNode->right);
+			int left = GetMinDepth(TNode->left);
+			int right = GetMinDepth(TNode->right);
 
 			return (left < right ? left : right) + 1;
 		}
