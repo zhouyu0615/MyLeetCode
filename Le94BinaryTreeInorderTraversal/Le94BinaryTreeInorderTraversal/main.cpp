@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <stack>
 
 
 using namespace std;
@@ -34,6 +35,34 @@ private:
 		Inorder(TNode->left);
 		result.push_back(TNode->val);
 		Inorder(TNode->right);
+	}
+};
+
+
+
+class Solution2 {
+public:
+	vector<int> inorderTraversal(TreeNode* root) {
+		vector<int> result;
+		stack<TreeNode*> TNodeStack;
+
+		TreeNode* TNode = root;
+		while (TNode!=NULL||!TNodeStack.empty())
+		{
+			while (TNode!=NULL)
+			{
+				TNodeStack.push(TNode);
+				TNode = TNode->left;
+			}
+
+			TNode = TNodeStack.top();
+			TNodeStack.pop();
+
+			result.push_back(TNode->val);
+
+			TNode = TNode->right;
+		}
+		return result;
 	}
 };
 
