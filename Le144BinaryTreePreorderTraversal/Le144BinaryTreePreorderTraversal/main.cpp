@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <stack>
 
 
 
@@ -36,6 +37,37 @@ private:
 		Preoredr(TNode->left);
 		Preoredr(TNode->right);
 	}
+};
+
+
+
+
+class Solution2 {
+public:
+	vector<int> preorderTraversal(TreeNode* root) {
+
+		vector<int> result;
+		stack<TreeNode*> TNodeStack;
+		TreeNode* TNode = root;
+
+		while (TNode!=NULL||!TNodeStack.empty())
+		{
+
+			while (TNode!=NULL)
+			{
+				TNodeStack.push(TNode);
+				result.push_back(TNode->val);
+				TNode = TNode->left;
+			}
+
+			TNode = TNodeStack.top();
+			TNodeStack.pop();
+			
+			TNode = TNode->right;
+		}
+		return result;
+	}
+
 };
 
 
