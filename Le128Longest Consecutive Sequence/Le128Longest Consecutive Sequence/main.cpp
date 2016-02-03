@@ -56,6 +56,8 @@ private:
 
 
 
+
+
 int main()
 {
 	vector<int> nums = { 100, 200, 101, 2, 1, 3, 4 };
