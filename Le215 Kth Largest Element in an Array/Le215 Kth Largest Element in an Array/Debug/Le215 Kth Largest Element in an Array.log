@@ -1,4 +1,4 @@
-﻿生成启动时间为 3/14/2016 4:01:52 PM。
+﻿生成启动时间为 3/15/2016 9:49:41 AM。
      1>项目“D:\我的资料库\Documents\GitHub\MyLeetCode\Le215 Kth Largest Element in an Array\Le215 Kth Largest Element in an Array\Le215 Kth Largest Element in an Array.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\visualStudio2013\VC\bin\CL.exe /c /ID:\boost_1_55_0 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
@@ -11,4 +11,4 @@
 
 生成成功。
 
-已用时间 00:00:00.91
+已用时间 00:00:01.08
