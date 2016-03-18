@@ -78,11 +78,13 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LoginUser.h" />
     <ClInclude Include="People.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LoginUser.cpp" />
     <ClCompile Include="MfcSerialization Exercise.cpp" />
     <ClCompile Include="People.cpp" />
     <ClCompile Include="stdafx.cpp">
