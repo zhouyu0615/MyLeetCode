@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Le151Reverse Words in a String", "Le151Reverse Words in a String\Le151Reverse Words in a String.vcxproj", "{8666F7EA-4345-43BD-A701-95A26FB26D80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8666F7EA-4345-43BD-A701-95A26FB26D80}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8666F7EA-4345-43BD-A701-95A26FB26D80}.Debug|Win32.Build.0 = Debug|Win32
+		{8666F7EA-4345-43BD-A701-95A26FB26D80}.Release|Win32.ActiveCfg = Release|Win32
+		{8666F7EA-4345-43BD-A701-95A26FB26D80}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
