@@ -14,7 +14,6 @@ public:
 		int len = nums.size();
 
 		result.assign(len, 0);
-
 		int count;
 		for (int i = 0; i < len;i++)
 		{
@@ -84,7 +83,6 @@ private:
 			}else if (tNode->val<val)
 			{
 				count += tNode->cnt + tNode->same;
-
 				if (tNode->right==NULL)
 				{
 					tNode->right = new TreeNode(val);
