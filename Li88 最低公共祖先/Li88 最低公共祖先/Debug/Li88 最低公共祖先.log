@@ -1,0 +1,13 @@
+﻿生成启动时间为 7/7/2016 9:52:43 AM。
+     1>项目“D:\我的资料库\Documents\GitHub\MyLeetCode\Li88 最低公共祖先\Li88 最低公共祖先\Li88 最低公共祖先.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\visualStudio2013\VC\bin\CL.exe /c /ID:\boost_1_55_0 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         D:\Program Files (x86)\visualStudio2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\我的资料库\Documents\GitHub\MyLeetCode\Li88 最低公共祖先\Debug\Li88 最低公共祖先.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\boost_1_55_0\stage\lib opencv_ts300d.lib opencv_world300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\我的资料库\Documents\GitHub\MyLeetCode\Li88 最低公共祖先\Debug\Li88 最低公共祖先.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\我的资料库\Documents\GitHub\MyLeetCode\Li88 最低公共祖先\Debug\Li88 最低公共祖先.lib" /MACHINE:X86 Debug\main.obj
+         Li88 最低公共祖先.vcxproj -> D:\我的资料库\Documents\GitHub\MyLeetCode\Li88 最低公共祖先\Debug\Li88 最低公共祖先.exe
+     1>已完成生成项目“D:\我的资料库\Documents\GitHub\MyLeetCode\Li88 最低公共祖先\Li88 最低公共祖先\Li88 最低公共祖先.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.09
